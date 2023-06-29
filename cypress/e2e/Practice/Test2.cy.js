@@ -36,3 +36,9 @@ describe("Test Suite # 1", () => {
          cy.contains('get').click();
   
     })
+
+    it("Test Case # 3", () => {
+
+        cy.contains('get').click();
+ 
+   })
