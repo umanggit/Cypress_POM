@@ -13,7 +13,7 @@ describe("POM Test Suite #1", ()=>{
         lp.txtPassword("admin")
         lp.btnLogin()
 
-        cy.title().should('be.equal', 'Dashboard / nopCommerce administration')
+        cy.title().should('be.equal', 'Dashboard / nopCommerce administration')  //
 
 
     })
