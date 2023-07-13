@@ -17,6 +17,6 @@ it("Google search",
  // cy.contains('Google Search').click();
 
     cy.get('.SDkEP').type("Umang");
-    cy.get('.gNO89').first().click();
+    cy.get('.gNO89b').first().click();
 
 })
