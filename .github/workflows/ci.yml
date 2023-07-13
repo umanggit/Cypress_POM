@@ -24,12 +24,4 @@ jobs:
           name: cypress-execution-report
       - name: Display structure of downloaded files
         run: ls -R
-        working-directory: cypress/Artifacts
-      - name: Checkout repository
-        uses: actions/checkout@v2
-      - name: Move or copy artifacts
-        run: |
-          mkdir -p cypress/Artifacts  # Create the desired location if it doesn't exist
-         # mv cypress/data  # Move the artifacts to the desired location
-
- 
+        working-directory: cypress/reports/html
