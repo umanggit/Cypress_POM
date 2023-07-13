@@ -19,17 +19,17 @@ jobs:
           name: cypress-execution-report
           path: cypress/reports/html
           retention-days: 30
-  new-job:
+    new-job:
       - name: Downloading artifact
         runs-on: ubuntu-22.04
         needs: cypress-run
-        steps: null
-      - name: Download
-        uses: actions/upload-artifact@v2
-        with:
-          name: static-site
-      - name: Test
-        run: ls -R
+        steps:
+        - name: Download
+          uses: actions/upload-artifact@v2
+          with:
+            name: static-site
+        - name: Test
+          run: ls -R
 
 
 
