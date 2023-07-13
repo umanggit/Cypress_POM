@@ -14,3 +14,8 @@ jobs:
         uses: cypress-io/github-action@v5
         with:
           spec: cypress/e2e/Practice/Test1.cy.js
+      - name: Commit and Push Reports
+        run: |
+          git add reports/
+          git commit -m "Add generated reports"
+          git push
