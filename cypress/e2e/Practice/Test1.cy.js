@@ -1,6 +1,14 @@
 /// <reference types = "cypress"/>
 
-it("Google search", () => {
+it("Google search",
+/*
+{
+    retries: {
+      runMode: 2,
+      openMode: 1,
+    },
+  },*/
+() => {
 
     cy.visit("https://google.com");
 
@@ -9,6 +17,6 @@ it("Google search", () => {
  // cy.contains('Google Search').click();
 
     cy.get('.SDkEP').type("Umang");
-    cy.get('.gNO89b').first().click();
+    cy.get('.gNO89').first().click();
 
 })
