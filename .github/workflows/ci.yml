@@ -1,5 +1,7 @@
 name: End-to-end tests
-on: [push]
+on:
+  schedule:
+    - corn: '1 * * * *'
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
@@ -10,3 +12,5 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v5
+        with:
+          spec: cypress/e2e/cypress/e2e/Practice/Test1.cy.js

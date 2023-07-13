@@ -11,5 +11,4 @@ it("Google search", () => {
     cy.get('.SDkEP').type("Umang");
     cy.get('.gNO89b').first().click();
 
-
 })
