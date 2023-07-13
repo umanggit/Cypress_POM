@@ -16,7 +16,7 @@ it("Google search",
 
  // cy.contains('Google Search').click();
 
-    cy.get('.SDkEP').type("Umang");
+    cy.get('.SDkEP').type("Umang Jain");
     cy.get('.gNO89b').first().click();
 
 })
