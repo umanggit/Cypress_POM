@@ -16,6 +16,6 @@ jobs:
           spec: cypress/e2e/Practice/Test1.cy.js
       - name: Commit and Push Reports
         run: |
-          git add reports/
+          git add cypress/reports/html/
           git commit -m "Add generated reports"
           git push
