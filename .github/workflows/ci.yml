@@ -1,5 +1,5 @@
 name: End-to-end tests
-on: [push]
+on: push
 #  schedule:
 #    - cron: '*/15 * * * *'
 jobs:
@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
-     - name: Cypress run
+      - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
           spec: cypress/e2e/Practice/Test1.cy.js
