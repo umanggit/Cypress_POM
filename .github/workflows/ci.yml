@@ -29,7 +29,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Move or copy artifacts
         run: |
-          mkdir -p desired/location  # Create the desired location if it doesn't exist
-          mv cypress/reports/html desired/location  # Move the artifacts to the desired location
+          mkdir -p cypress/data  # Create the desired location if it doesn't exist
+          mv cypress/data  # Move the artifacts to the desired location
 
  
