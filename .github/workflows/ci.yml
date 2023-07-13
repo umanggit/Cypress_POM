@@ -1,7 +1,7 @@
 name: End-to-end tests
 on:
   schedule:
-    - corn: '1 * * * *'
+    - cron: '1 * * * *'
 jobs:
   cypress-run:
     runs-on: ubuntu-22.04
