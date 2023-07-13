@@ -18,5 +18,6 @@ it("Google search",
 
     cy.get('.SDkEP').type("Umang Jain");
     cy.get('.gNO89b').first().click();
+    cy.screenshot();
 
 })
