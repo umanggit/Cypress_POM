@@ -28,7 +28,7 @@ describe("POM Test Suite", ()=>{
     beforeEach(()=>{
 
         se.visit();
-        se.closePopUp();
+     //   se.closePopUp();
         se.searchForItem(data.item1, data.item2);
         sr.verifingSearchString(data.title);
         sr.filterResultsByMetal(data.metal);
