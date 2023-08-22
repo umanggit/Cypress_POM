@@ -10,15 +10,15 @@ module.exports = defineConfig({
       this.screenshotOnRunFailure = true;
       require('cypress-mochawesome-reporter/plugin')(on); // for html reports
     },
-    baseUrl : 'https://example.cypress.io',
+    baseUrl : 'https://www.bluestone.com/',
 
     "retries": {
         // Configure retry attempts for `cypress run`
         // Default is 0
-        "runMode": 2,
+        "runMode": 0,
         // Configure retry attempts for `cypress open`
         // Default is 0
-        "openMode": 2,
+        "openMode": 0,
       }
   
 

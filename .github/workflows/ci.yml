@@ -11,7 +11,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v5
         with:
-          spec: cypress/e2e/Practice/Test1.cy.js
+          spec: cypress/e2e/testScripts/blueStone_Test.cy.js
       - name: Uploading artifact
         uses: actions/upload-artifact@v2
         if: always()
