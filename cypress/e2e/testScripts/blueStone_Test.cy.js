@@ -15,7 +15,7 @@ const loc = new locationAndSize()
 const po = new placeOrder()
 
 
-describe("POM test suite", ()=>{
+describe("POM Test Suite", ()=>{
 
     before(() => {
         // Register the global event listener before the tests start
