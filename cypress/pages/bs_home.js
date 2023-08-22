@@ -15,7 +15,7 @@ class search
 
     closePopUp()
     {
-        cy.get(this.popUp).click({force: true});
+        cy.get(this.popUp).should('be.visible').click({force: true});
     }
 
     searchForItem(value1, value2)
