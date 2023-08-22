@@ -26,7 +26,7 @@ class search
                 cy.log($el.text())
                 if($el.text() == value2)
                 {
-                    cy.wrap($el).click();
+                    cy.wrap($el).wait(3000).click();
                 }
             })
         })
