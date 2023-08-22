@@ -2,7 +2,7 @@
 
 class search
 {
-    popUp = '#denyBtn'
+ //   popup = '.deny-btn'
     searchBox = '#search_query_top_elastic_search'
     dynamicDropDown = '.xdsoft_autocomplete_dropdown div a'
     navBar = '.wh-navbar > ul > li'
@@ -13,20 +13,20 @@ class search
         cy.visit("/");
     }
 
-    closePopUp()
-    {
-        cy.get(this.popUp).should('be.visible').click({force: true});
-    }
+    // closePopUp()
+    // {
+    //     cy.get(this.popup).should('be.visible').click();
+    // }
 
     searchForItem(value1, value2)
     {
-        cy.get(this.popUp).click();
+     //   cy.get(this.popup).click();
         cy.get(this.searchBox).type(value1,{delay:30}).then(()=>{
             cy.get(this.dynamicDropDown).each(($el)=>{
                 cy.log($el.text())
                 if($el.text() == value2)
                 {
-                    cy.wrap($el).wait(3000).click();
+                    cy.wrap($el).click();
                 }
             })
         })

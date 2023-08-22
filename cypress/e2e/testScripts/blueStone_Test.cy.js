@@ -28,7 +28,7 @@ describe("POM Test Suite", ()=>{
     beforeEach(()=>{
 
         se.visit();
-     //   se.closePopUp();
+//        se.closePopUp();
         se.searchForItem(data.item1, data.item2);
         sr.verifingSearchString(data.title);
         sr.filterResultsByMetal(data.metal);
@@ -36,7 +36,7 @@ describe("POM Test Suite", ()=>{
     })
 
 
-    it("Test case #1 - Verifying number of items being displyed for a particular search query", ()=>{
+    it.only("Test case #1 - Verifying number of items being displyed for a particular search query", ()=>{
     
         sr.verifyingNumberOfSearchResults();
     })
